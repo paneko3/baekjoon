@@ -1,24 +1,24 @@
-// BOJ_3052_나머지
+// BOJ_10809_알파벳 찾기
 
 import java.io.*;
 
-public class BOJ_3052 {
+public class BOJ_10809 {
 	public static void main(String[] args) throws IOException {
 		/* ==========input========== */
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int arr[] = new int[10];
-		for(int i=0; i<10;i++) 
-			arr[i]=Integer.parseInt(br.readLine());
+		String str = br.readLine();
 		/* ==========sol========== */
-		int m[] = new int[42];
-		int count = 0;
-		for (int i = 0; i < 10; i++) 
-			m[arr[i] % 42]++;
-		for (int i = 0; i < 42; i++) 
-			if (m[i] > 0) 
-				count++;
+		int arr[] = new int[26];
+		for (int i = 0; i < 26; i++)
+			arr[i] = -1;
+		for (int i = 0; i < str.length(); i++) {
+			char c = str.charAt(i);
+			if (arr[c - 'a'] == -1)
+				arr[c - 'a'] = i;
+		}
 		/* ==========output========== */
-		System.out.println(count);
+		for (int i = 0; i < 26; i++)
+			System.out.print(arr[i] + " ");
 		br.close();
 	}
 }
