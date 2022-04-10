@@ -7,32 +7,31 @@ import java.util.StringTokenizer;
 
 public class BOJ_13458 {
     public static void main(String[] args) throws IOException {
+        /* ==========input========== */
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
         int[] A = new int[N];
         StringTokenizer st = new StringTokenizer(br.readLine());
-        for(int i=0;i<N;i++){
+        for(int i=0;i<N;i++)
             A[i]= Integer.parseInt(st.nextToken());
-        }
         st = new StringTokenizer(br.readLine());
         int B = Integer.parseInt(st.nextToken());
         int C = Integer.parseInt(st.nextToken());
+        /* ==========sol========== */
         long result =0;
         for(int i=0;i<N;i++){
             int temp =A[i];
-            if(temp<=B){
-                result++;
-            }else{
-                result++;
-                temp-=B;
-                result+=temp/C;
-                if(temp%C!=0){
+            result++;
+            if (temp > B) {
+                temp -= B;
+                result += temp / C;
+                if (temp % C != 0) {
                     result++;
                 }
             }
         }
+        /* ==========output========== */
         System.out.println(result);
         br.close();
     }
 }
-
