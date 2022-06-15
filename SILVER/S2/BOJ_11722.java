@@ -1,4 +1,4 @@
-// BOJ_11722_가장 긴 감소하는 부분 수열
+// BOJ_15684_사다리 조작
 
 import java.io.BufferedReader;
 import java.io.IOException;
