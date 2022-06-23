@@ -1,4 +1,4 @@
-// BOJ_2448_거짓말
+// BOJ_2448_별 찍기 - 11
 
 import java.io.BufferedReader;
 import java.io.IOException;
