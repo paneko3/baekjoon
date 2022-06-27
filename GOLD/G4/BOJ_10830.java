@@ -33,6 +33,7 @@ public class BOJ_10830 {
         }
         br.close();
     }
+    /* ==========recur========== */
     static int[][] recur(long B){
         if(B==1){
             return A;
@@ -45,6 +46,7 @@ public class BOJ_10830 {
             return cal(mat1,mat2);
         }
     }
+    /* ==========cal========== */
     static int[][] cal(int[][] A,int [][] B){
         int[][] mat = new int[N][N];
         for(int i=0;i<N;i++){
