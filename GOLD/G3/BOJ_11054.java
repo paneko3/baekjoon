@@ -37,7 +37,7 @@ public class BOJ_11054 {
         }
         int result=0;
         for(int i=0;i<N;i++){
-            result=Math.max(result,dpL[i]+dpR[i]);
+            result=Math.max(result,dpL[i] + dpR[i]);
         }
         /* ==========output========== */
         System.out.println(result-1);
