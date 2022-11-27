@@ -16,3 +16,4 @@ public class BOJ_1001 {
 		br.close();
 	}
 }
+ 
