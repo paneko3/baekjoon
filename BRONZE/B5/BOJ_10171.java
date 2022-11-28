@@ -11,3 +11,4 @@ public class BOJ_10171 {
 		System.out.println(" \\(__)|");
 	}
 }
+ 
