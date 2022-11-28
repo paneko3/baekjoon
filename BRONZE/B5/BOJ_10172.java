@@ -12,3 +12,4 @@ public class BOJ_10172 {
 		System.out.println("||_/=\\\\__|");
 	}
 }
+ 
