@@ -20,3 +20,4 @@ public class BOJ_10430 {
 		br.close();
 	}
 }
+ 
