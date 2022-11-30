@@ -9,3 +9,4 @@ public class BOJ_10718 {
 		System.out.println("강한친구 대한육군");
 	}
 }
+ 
