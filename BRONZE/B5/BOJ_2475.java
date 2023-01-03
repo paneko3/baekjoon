@@ -21,3 +21,4 @@ public class BOJ_2475 {
         br.close();
     }
 }
+ 
