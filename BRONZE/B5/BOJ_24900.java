@@ -71,3 +71,4 @@ public class BOJ_24900 {
 		System.out.println("                                                     :DDD.            NNNN=                                             ");
 	}
 }
+ 
