@@ -1,4 +1,4 @@
-// BOJ_2475_검증수
+// BOJ_9372_상근이의 여행
 
 import java.io.BufferedReader;
 import java.io.IOException;
