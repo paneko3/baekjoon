@@ -22,7 +22,7 @@ public class BOJ_14916 {
             result++;
         }
         /* ==========output========== */
-        System.out.println(N>0?result:-1);
+        System.out.println(N>=0?result:-1);
         br.close();
     }
 }
