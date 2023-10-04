@@ -1,0 +1,19 @@
+// BOJ_13909_창문 닫기
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class BOJ_13909 {
+    public static void main(String[] args) throws IOException {
+        /* ==========input========== */
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int N = Integer.parseInt(st.nextToken());
+        /* ==========sol========== */
+        /* ==========output========== */
+        System.out.println((int)(Math.sqrt(N)));
+        br.close();
+    }
+}
