@@ -1,0 +1,32 @@
+// BOJ_28324_스케이트 연습
+
+import java.io.*;
+import java.util.*;
+
+public class BOJ_28324 {
+    public static void main(String[] args) throws IOException {
+        /* ==========input========== */
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        int[] v = new int[n];
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < n; i++) v[i] = Integer.parseInt(st.nextToken());
+        /* ==========sol========== */
+        long result = 0;
+        long[] speeds = new long[n];
+
+        speeds[n - 1] = Math.min(v[n - 1], 1L);
+
+        for (int i = n - 2; i >= 0; i--) {
+            speeds[i] = Math.min(v[i], speeds[i + 1] + 1);
+            if (speeds[i] == 0) speeds[i] = 1;
+        }
+
+        for (long speed : speeds) {
+            result += speed;
+        }
+        /* ==========output========== */
+        System.out.println(result);
+        br.close();
+    }
+}
