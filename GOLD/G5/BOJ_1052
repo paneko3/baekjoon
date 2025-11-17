@@ -1,0 +1,31 @@
+// BOJ_1052_물병
+
+import java.io.*;
+import java.util.*;
+
+public class BOJ_1052 {
+    public static void main(String[] args) throws IOException {
+        /* ==========input========== */
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        
+        int N = Integer.parseInt(st.nextToken());
+        int K = Integer.parseInt(st.nextToken());
+
+        /* ==========sol========== */
+        
+        int current_W = N;
+        int bottles_bought = 0;
+        
+        while (Integer.bitCount(current_W) > K) {
+            int L = current_W & (-current_W);
+            
+            bottles_bought += L;
+            current_W += L;
+        }
+
+        /* ==========output========== */
+        System.out.println(bottles_bought);
+        br.close();
+    }
+}
